@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorprima"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -52,6 +52,10 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@color/ic_launcher_background"
+        android:textColorLink="@color/ic_launcher_background"
+        android:textCursorDrawable="@color/ic_launcher_background"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -65,19 +69,23 @@
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@color/ic_launcher_background"
+        android:textColorLink="@color/ic_launcher_background"
+        android:textCursorDrawable="@color/ic_launcher_background"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSingup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@android:color/background_light"
         android:text="@string/btn_singup"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorprima"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -112,12 +120,16 @@
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@color/ic_launcher_background"
+        android:textColorLink="@color/ic_launcher_background"
+        android:textCursorDrawable="@color/ic_launcher_background"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
     <TextView
-        android:id="@+id/TextViewGoSingup"
+        android:id="@+id/TextViewGoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -126,6 +138,6 @@
         android:textSize="17sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSingup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

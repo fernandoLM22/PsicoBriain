@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnlogin = findViewById(R.id.btnLogin);
-        tvGoSingup = findViewById(R.id.TextViewGoSingup);
+        btnlogin = findViewById(R.id.btnSingup);
+        tvGoSingup = findViewById(R.id.TextViewGoLogin);
 
 
         btnlogin .setOnClickListener(this);
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
 
         switch (id){
-            case R.id.btnLogin:
+            case R.id.btnSingup:
                 break;
-            case R.id.TextViewGoSingup:
+            case R.id.TextViewGoLogin:
                 goToSignup();
                 break;
         }
